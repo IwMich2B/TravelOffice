@@ -9,15 +9,16 @@ public class AbroadTrip extends Trip{
         super(start, end, destynation, price);
         this.insurance = insurance;
     }
+    public void setInsurance(double insurance) {
+        this.insurance = insurance;
+    }
+
 
     @Override
     public double getPrice() {
         return super.getPrice() + insurance;
     }
 
-    public void setInsurance(double insurance) {
-        this.insurance = insurance;
-    }
 
 
 }
